@@ -8,7 +8,7 @@ Encoding:
    The algorithm is as follows:
 
    1.For each character in the data, its ASCII value is taken and converted into an 8-bit binary [1].
-   2.Three pixels are read at a time having a total of 3*3=9 RGB values. The first eight RGB values are used to store one character                                        that is converted into an 8-bit binary.
+   2.Three pixels are read at a time having a total of 3*3=9 RGB values. The first eight RGB values are used to store one character                                              that is converted into an 8-bit binary.
    3.The corresponding RGB value and binary data are compared. If the binary digit is 1 then the RGB value is converted to odd and, otherwise, even.
    4.The ninth value determines if more pixels should be read or not. If there is more data to be read, i.e. encoded or decoded, then the ninth pixel changes to even. Otherwise, if we want to stop reading pixels further, then make it odd.
    
